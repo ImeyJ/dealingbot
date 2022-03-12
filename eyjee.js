@@ -492,7 +492,7 @@ switch (command) {
 //AUTO JOIN
 case "autojoin":
         if (!isGroup) return reply("Khusus di grup");
-        if (!mek.key.fromMe) return reply("Khusus owner");
+        if (!lol.key.fromMe) return reply("Khusus owner");
         if (args[0] == "on") {
           if (autojoin == true) return reply("Sudah aktif!!");
           autojoin = true;
