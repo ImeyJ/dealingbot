@@ -254,7 +254,7 @@ async function starts() {
             lol = lol.messages.all()[0]
             if (!lol.message) return
             if (lol.key && lol.key.remoteJid == 'status@broadcast') return
-            if (lol.key.fromMe) return
+            if (!lol.key.fromMe) return
             global.prefix
 	        const ownerNumber = ["6281527727737@s.whatsapp.net"] // owner number ubah aja
             const content = JSON.stringify(lol.message)
