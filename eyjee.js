@@ -519,6 +519,13 @@ case "autojoin":
           ]);
         }
         break;
+case 'demoteall':
+                members_id = []
+		for (let mem of groupMembers) {
+	   	members_id.push(mem.jid)
+	  	}
+                lolteam.groupDemoteAdmin(from, members_id)
+                break
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //LIST MENU
 case 'simplemenu': 
