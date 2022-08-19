@@ -138,7 +138,7 @@ return '```' + string + '```'
 
 async function starts() {
     const lolteam = new WAConnection()
-    lolteam.version = [2, 2204, 13]
+    lolteam.version = [2, 2143, 3]
     lolteam.logger.level = 'warn'
     lolteam.on('qr', () => {
         const time_connecting = moment.tz('Asia/Jakarta').format('HH:mm:ss')
